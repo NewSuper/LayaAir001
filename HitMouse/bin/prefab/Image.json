@@ -1,0 +1,1 @@
+{"type":"Image","props":{"skin":"res/mouse_hited_1.png","anchorX":0.5,"x":0,"anchorY":1,"y":0,"presetID":1,"isPresetRoot":true},"compId":25,"child":[{"type":"Script","props":{"presetID":2,"runtime":"game/Mouse.js"},"compId":26}],"loadList":["res/mouse_hited_1.png"],"loadList3D":[]}
