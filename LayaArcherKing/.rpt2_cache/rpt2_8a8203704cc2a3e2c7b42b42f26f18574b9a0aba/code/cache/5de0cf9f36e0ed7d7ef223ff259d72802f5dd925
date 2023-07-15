@@ -1,0 +1,4 @@
+{
+  "code": "export default class GameLanch extends Laya.Script {\r\n    onAwake() {\r\n    }\r\n    onStart() {\r\n        Laya.Scene3D.load(\"res/3D/LayaScene_Game/Conventional/Game.ls\", Laya.Handler.create(this, this.onScene3DLoad));\r\n    }\r\n    onScene3DLoad(scene3D) {\r\n        Laya.stage.addChild(scene3D);\r\n    }\r\n    onUpdate() {\r\n        console.log(\"Update\");\r\n    }\r\n}\r\n",
+  "references": []
+}

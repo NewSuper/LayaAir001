@@ -1,0 +1,1 @@
+{"type":"Scene","props":{"width":960,"name":"game","height":640},"compId":2,"child":[{"type":"Script","props":{"runtime":"scripts/game_mgr.js"},"compId":3}],"loadList":[],"loadList3D":[]}

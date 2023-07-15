@@ -1,0 +1,10 @@
+[
+  {
+    "flatMessage": "Property 'alpha' does not exist on type 'Node'.",
+    "formatted": "\u001b[96m../../../../../../../layaDemo/selfDemo/ok/playMouse-ts/pm/src/game/hammer.ts\u001b[0m:\u001b[93m10\u001b[0m:\u001b[93m20\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2339: \u001b[0mProperty 'alpha' does not exist on type 'Node'.\r\n\r\n\u001b[7m10\u001b[0m         this.owner.alpha = 1;\r\n\u001b[7m  \u001b[0m \u001b[91m                   ~~~~~\u001b[0m\r\n",
+    "category": 1,
+    "code": 2339,
+    "type": "semantic",
+    "fileLine": "F:/layaDemo/selfDemo/ok/playMouse-ts/pm/src/game/hammer.ts(10,20)"
+  }
+]

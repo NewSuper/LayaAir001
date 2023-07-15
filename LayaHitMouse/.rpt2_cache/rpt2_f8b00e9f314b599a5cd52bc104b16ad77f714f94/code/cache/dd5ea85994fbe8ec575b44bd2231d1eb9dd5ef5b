@@ -1,0 +1,6 @@
+{
+  "code": "import game_m from \"./game/game_m\";\r\nexport default class GameConfig {\r\n    constructor() { }\r\n    static init() {\r\n        var reg = Laya.ClassUtils.regClass;\r\n        reg(\"game/game_m.ts\", game_m);\r\n    }\r\n}\r\nGameConfig.width = 960;\r\nGameConfig.height = 640;\r\nGameConfig.scaleMode = \"fixedwidth\";\r\nGameConfig.screenMode = \"none\";\r\nGameConfig.alignV = \"top\";\r\nGameConfig.alignH = \"left\";\r\nGameConfig.startScene = \"gameMain.scene\";\r\nGameConfig.sceneRoot = \"\";\r\nGameConfig.debug = false;\r\nGameConfig.stat = false;\r\nGameConfig.physicsDebug = false;\r\nGameConfig.exportSceneToJson = true;\r\nGameConfig.init();\r\n",
+  "references": [
+    "C:/Users/Administrator/Desktop/playMouse-ts/pm/src/game/game_m.ts"
+  ]
+}

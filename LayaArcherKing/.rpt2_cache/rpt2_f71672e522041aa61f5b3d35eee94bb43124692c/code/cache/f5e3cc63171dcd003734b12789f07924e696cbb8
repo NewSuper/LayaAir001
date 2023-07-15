@@ -1,0 +1,6 @@
+{
+  "code": "export default class MonoBehaviour extends Laya.Script3D {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.gameObject = null;\r\n        this.transfrom = null;\r\n    }\r\n    onAwake() {\r\n        this.gameObject = this.owner;\r\n        this.transfrom = this.gameObject.transform;\r\n        this.Awake();\r\n    }\r\n    onStart() {\r\n        this.Start();\r\n    }\r\n    onUpdate() {\r\n        this.Update();\r\n    }\r\n    onLateUpdate() {\r\n        this.LateUpdate();\r\n    }\r\n    Awake() {\r\n    }\r\n    Start() {\r\n    }\r\n    Update() {\r\n    }\r\n    LateUpdate() {\r\n    }\r\n}\r\n",
+  "references": [
+    "C:/Home/workspace/LayaArcherKing/src/Scripts/Utils/InterfaceBehaviour.ts"
+  ]
+}

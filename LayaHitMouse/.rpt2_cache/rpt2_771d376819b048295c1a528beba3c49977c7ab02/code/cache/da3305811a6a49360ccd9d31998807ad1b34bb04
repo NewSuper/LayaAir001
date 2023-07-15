@@ -1,0 +1,4 @@
+{
+  "code": "export default class mouse extends Laya.Script {\r\n    constructor() {\r\n        super();\r\n        this.mouse_type = 1;\r\n    }\r\n    onEnable() {\r\n    }\r\n    onDisable() {\r\n    }\r\n    onStart() {\r\n    }\r\n    show_mouse(type) {\r\n        this.mouse_type = type;\r\n        this.owner.skin = \"ui/mouse_normal_\" + this.mouse_type + \".png\";\r\n        var time_line = Laya.TimeLine.to(this.owner, { scaleX: 1, scaleY: 1 }, 300);\r\n        time_line.to(this.owner, { scaleX: 0, scaleY: 0 }, 300, null, 1000);\r\n        time_line.play(0, false);\r\n    }\r\n}\r\n",
+  "references": []
+}

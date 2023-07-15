@@ -1,0 +1,4 @@
+{
+  "code": "export default class hammer extends Laya.Script {\r\n    constructor() { super(); }\r\n    onEnable() {\r\n    }\r\n    onDisable() {\r\n    }\r\n    onStart() {\r\n        this.play_hammer();\r\n    }\r\n    play_hammer() {\r\n        var time = 100;\r\n        var alpha = 1;\r\n        var time_line = Laya.TimeLine.to(this.owner, { rotation: 10 }, time, null, 1000);\r\n        time_line.to(this.owner, { rotation: -13 }, time * 2, null);\r\n        time_line.to(this.owner, { rotation: time }, 300);\r\n        time_line.to(this.owner, { alpha: 0 }, time * 2, null, 500);\r\n        time_line.play(0, false);\r\n    }\r\n}\r\n",
+  "references": []
+}

@@ -1,0 +1,6 @@
+{
+  "code": "import ball_ctrl from \"./ball_ctrl\";\r\nexport default class game_mgr extends Laya.Script {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.is_debug = false;\r\n        this.particle = null;\r\n    }\r\n    test_foo(lhs, rhs) {\r\n    }\r\n    on_win_socre() {\r\n        this.particle.stop();\r\n        this.particle.play();\r\n    }\r\n    onAwake() {\r\n        Laya.stage.on(\"WIN_SOCRE\", this, this.on_win_socre);\r\n        Laya.Scene3D.load(\"res/scenes3D/LayaScene_game/Conventional/game.ls\", Laya.Handler.create(this, this.on_scene3d_loaded));\r\n    }\r\n    on_scene3d_loaded(scene3D) {\r\n        Laya.stage.addChild(scene3D);\r\n        var ball = scene3D.getChildByName(\"ball\");\r\n        ball.addComponent(ball_ctrl);\r\n        this.particle = scene3D.getChildByName(\"Particle\").particleSystem;\r\n        this.particle.stop();\r\n    }\r\n    onUpdate() {\r\n    }\r\n}\r\n",
+  "references": [
+    "D:/company/LayaAir001/layaBall/src/scripts/ball_ctrl.ts"
+  ]
+}

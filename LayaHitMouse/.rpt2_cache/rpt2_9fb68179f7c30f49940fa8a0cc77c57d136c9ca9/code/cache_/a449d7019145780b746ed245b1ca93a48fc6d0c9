@@ -1,0 +1,8 @@
+{
+  "code": "import game_m from \"./game/game_m\";\r\nimport hammer from \"./game/hammer\";\r\nimport mouse from \"./game/mouse\";\r\nexport default class GameConfig {\r\n    constructor() { }\r\n    static init() {\r\n        var reg = Laya.ClassUtils.regClass;\r\n        reg(\"game/game_m.ts\", game_m);\r\n        reg(\"game/hammer.ts\", hammer);\r\n        reg(\"game/mouse.ts\", mouse);\r\n    }\r\n}\r\nGameConfig.width = 960;\r\nGameConfig.height = 640;\r\nGameConfig.scaleMode = \"fixedwidth\";\r\nGameConfig.screenMode = \"none\";\r\nGameConfig.alignV = \"top\";\r\nGameConfig.alignH = \"left\";\r\nGameConfig.startScene = \"gameMain.scene\";\r\nGameConfig.sceneRoot = \"\";\r\nGameConfig.debug = false;\r\nGameConfig.stat = false;\r\nGameConfig.physicsDebug = false;\r\nGameConfig.exportSceneToJson = true;\r\nGameConfig.init();\r\n",
+  "references": [
+    "F:/layaDemo/selfDemo/ok/playMouse-ts/pm/src/game/game_m.ts",
+    "F:/layaDemo/selfDemo/ok/playMouse-ts/pm/src/game/hammer.ts",
+    "F:/layaDemo/selfDemo/ok/playMouse-ts/pm/src/game/mouse.ts"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "code": "export default class game_m extends Laya.Script {\r\n    constructor() {\r\n        super();\r\n        this.intType = 1000;\r\n        this.numType = 1000;\r\n        this.strType = \"hello laya\";\r\n        this.boolType = true;\r\n    }\r\n    onEnable() {\r\n    }\r\n    onDisable() {\r\n    }\r\n    onAwake() {\r\n    }\r\n    onUpdate() {\r\n    }\r\n}\r\n",
+  "references": []
+}

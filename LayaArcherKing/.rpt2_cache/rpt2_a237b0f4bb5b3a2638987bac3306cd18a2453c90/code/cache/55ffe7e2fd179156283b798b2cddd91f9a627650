@@ -1,0 +1,4 @@
+{
+  "code": "export default class GameLanch extends Laya.Script {\r\n    onAwake() {\r\n        console.log(\"onAwake\");\r\n    }\r\n    onStart() {\r\n        console.log(\"Start\");\r\n    }\r\n    onUpdate() {\r\n        console.log(\"Update\");\r\n    }\r\n}\r\n",
+  "references": []
+}

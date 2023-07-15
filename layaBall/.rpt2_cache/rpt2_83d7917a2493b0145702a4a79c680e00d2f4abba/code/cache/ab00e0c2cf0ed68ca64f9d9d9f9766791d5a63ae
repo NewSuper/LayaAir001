@@ -1,0 +1,4 @@
+{
+  "code": "export default class game_mgr extends Laya.Script {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.is_debug = false;\r\n    }\r\n    test_foo(lhs, rhs) {\r\n    }\r\n    onAwake() {\r\n        Laya.Scene3D.load(\"res/scenes3D/LayaScene_game/Conventional/game.ls\", Laya.Handler.create(this, this.on_scene3d_loaded));\r\n    }\r\n    on_scene3d_loaded(scene3D) {\r\n        Laya.stage.addChild(scene3D);\r\n    }\r\n    onUpdate() {\r\n        console.log(\"onUpdate\");\r\n    }\r\n}\r\n",
+  "references": []
+}

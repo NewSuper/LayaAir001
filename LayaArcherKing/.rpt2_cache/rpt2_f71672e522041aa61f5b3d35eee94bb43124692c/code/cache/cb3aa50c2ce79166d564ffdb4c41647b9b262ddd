@@ -1,0 +1,6 @@
+{
+  "code": "import GameMgr from \"./Game/GameMgr\";\r\nexport default class GameLanch extends Laya.Script {\r\n    onAwake() {\r\n    }\r\n    onStart() {\r\n        Laya.Scene3D.load(\"res/3D/LayaScene_Game/Conventional/Game.ls\", Laya.Handler.create(this, this.onScene3DLoad));\r\n    }\r\n    onScene3DLoad(scene3D) {\r\n        Laya.stage.addChild(scene3D);\r\n        scene3D.addComponent(GameMgr).init(this.owner.getChildByName(\"uiCursor\"));\r\n        scene3D.zOrder = -1;\r\n    }\r\n    onUpdate() {\r\n    }\r\n}\r\n",
+  "references": [
+    "C:/Home/workspace/LayaArcherKing/src/Scripts/Game/GameMgr.ts"
+  ]
+}
